@@ -8,6 +8,14 @@ To start the app use: `./start.sh` from the backend directory.
 
 Make sure your DB is up and running.
 
+First, make sure you have a database name setup in `config/database.yml`.
+Secondly, you need to run the following commands to create the new DB and then run all the migrations:
+
+```ruby
+bundle exec rails db:create
+bundle exec rails db:migrate
+```
+
 ## Dependencies
 
 - [acts_as_follower](https://github.com/tcocca/acts_as_follower) - For implementing followers/following
