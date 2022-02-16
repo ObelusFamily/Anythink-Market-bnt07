@@ -7,6 +7,7 @@ default: &default
 development:
   <<: *default
   encoding: unicode
+  database: liorbrauer
   pool: 5
 
 test:
