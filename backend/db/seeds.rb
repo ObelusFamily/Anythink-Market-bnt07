@@ -8,5 +8,6 @@
 
 for i in 0..99 do
 	user = User.create! email: "test#{i}@test.com", password: "123123", username: "test#{i}"
-	Item.create! title: "test item #{i}", user: user, description: "wow #{i}"
+	item = Item.create! title: "test item #{i}", user: user, description: "wow #{i}"
+	Comment.create! user: user, body: "wow!", item: item
 end
