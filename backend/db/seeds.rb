@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+for i in 0..99 do
+	user = User.create! email: "test#{i}@test.com", password: "123123", username: "test#{i}"
+	item = Item.create! title: "test item #{i}", user: user, description: "wow #{i}"
+	Comment.create! user: user, body: "wow!", item: item
+end
