@@ -1,6 +1,6 @@
 import ItemMeta from "./ItemMeta";
 import CommentContainer from "./CommentContainer";
-import placeholder from '../../imgs/placeholder.png'
+import placeholder from "../../imgs/placeholder.png";
 import React from "react";
 import agent from "../../agent";
 import { connect } from "react-redux";
