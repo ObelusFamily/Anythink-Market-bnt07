@@ -18,5 +18,9 @@ class Item < ApplicationRecord
     self.slug ||= "#{title.to_s.parameterize}-#{rand(36**6).to_s(36)}"
   end
 
-  # wow
+  def image
+    return "/imgs/placeholder.png" if self[:image].blank?
+
+    self[:image]
+  end
 end
